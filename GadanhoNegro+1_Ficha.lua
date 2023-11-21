@@ -37,7 +37,7 @@ if D20 == 1 then
     elseif D20 >= tonumber(sheet.atkcritico1) then
         Ataque = D20 + sheet.modforca + Talento_1 + sheet.bba + Bonus_magico + ForcaDoTouro + Investida + Flanqueando + sheet.metadenivel-- calculo da margem de acerto
         Dano_final = ( Dano_base + Bonus_magico + sheet.modforca + ForcaDoTouro + sheet.metadenivel ) * Crit_mult -- calculo do dano da arma
-        Regenercao = Dano_final / 2 -- Regeneração do gadanho negro
+        Regenercao = Dano_final // 2 -- Regeneração do gadanho negro
         --prints
         send("[§K#0FF]Ataque do(a) [§K#fff]"..sheet.atkname1)
         send("[§K#0FF]Obtendo rolagem de ataque: [§K#fff]"..Ataque)
@@ -46,7 +46,7 @@ if D20 == 1 then
     else do 
         Ataque = D20 + sheet.modforca + Talento_1 + sheet.bba + Bonus_magico +ForcaDoTouro + Investida + Flanqueando + sheet.metadenivel -- calculo damargem da arma
         Dano_final = Dano_base + Bonus_magico + sheet.modforca + ForcaDoTouro + sheet.metadenivel -- calculo do dano da arma
-        Regenercao = Dano_final / 2 -- Regeneração do Gadanho Negro
+        Regenercao = Dano_final // 2 -- Regeneração do Gadanho Negro
         -- prints
         send("[§K#0FF]Ataque do(a) [§K#fff]"..sheet.atkname1)
         send("[§K#0FF]Obtendo rolagem de ataque: [§K#fff]"..Ataque)
